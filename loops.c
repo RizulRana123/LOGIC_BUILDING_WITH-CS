@@ -213,6 +213,55 @@
 //     return 0;
 // }
 
+
+//15.🔷WAP to calculate the GCD and LCM of numbers
+
+// #include <stdio.h>
+
+// int main()
+//  {
+//     int num1, num2, gcd, lcm;
+
+//     printf("Enter two positive integers: ");
+//     scanf("%d %d", &num1, &num2);
+
+    
+//     for (int i = 1; i <= num1 && i <= num2; ++i) {
+       
+//         if (num1 % i == 0 && num2 % i == 0) {
+//             gcd = i; 
+//         }
+//     }
+
+//     lcm = (num1 * num2) / gcd;
+
+//     printf("G.C.D of %d and %d is %d\n", num1, num2, gcd);
+//     printf("L.C.M of %d and %d is %d", num1, num2, lcm);
+
+//     return 0;
+// }
+
+
+
+//16.🔷wap to calculate the GCD and Lcm of numbers
+
+// #include <stdio.h>
+// int main()
+//  {
+//     int num1, num2, gcd, lcm;
+//     printf("Enter two positive integers: ");
+//     scanf("%d %d", &num1, &num2);
+//     for (int i = 1; i <= num1 && i <= num2; ++i) {
+//         if (num1 % i == 0 && num2 % i == 0) {
+//             gcd = i; 
+//         }
+//     }
+//     lcm = (num1 * num2) / gcd;
+//     printf("G.C.D of %d and %d is %d\n", num1, num2, gcd);
+//     printf("L.C.M of %d and %d is %d\n", num1, num2, lcm);
+//     return 0;}
+
+
 // 🔷🔷🔷WHILE LOOP🔷🔷🔷
 
 
@@ -357,6 +406,57 @@
 // }
 // printf("THE SUM OF FIRST AND LAST DIGIT OF NUMBER %d IS ==> :%d",original_number,first + last);
 // return 0;}
+
+//  8.🔷wap to  swap first and last digit
+
+// #include<stdio.h>
+// int main()
+// {
+//    int num , first , last , temp;
+//    printf("Enter any integer : ");
+//    scanf("%d", &num);
+
+
+//    last = num % 10;
+//     first = num;
+
+//    while (first >= 10)
+//    {
+//      first = first / 10;
+//    }
+   
+//    printf("before swapping values; first = %d, last = %d, num = %d" , first,last , num);
+//    temp = first;
+//    first = last;
+//    last = temp;
+
+//    printf("after swapping values; first = %d, last = %d , temp num = %d" , first,last , num);
+
+   
+//    return 0;
+// }
+
+// 9.🔷 Find the GCD of two numbers using repeated subtraction.
+
+// GCD(A,B) == GCD(A-B,B)
+// int a,b;
+// printf("Enter the value of a \n");
+// scanf("%d",&a);
+// printf("Enter the value of :b \n");
+// scanf("%d",&b);
+
+
+// while (a != b){
+
+//     if(a > b)
+//     {a = a-b;}
+
+//     else {b = b-a;}
+// }
+// printf("THE GCD OF THE GIVEN NUMBERS IS %d",a);
+
+
+
 
 
 
