@@ -456,6 +456,41 @@
 // printf("THE GCD OF THE GIVEN NUMBERS IS %d",a);
 
 
+//10.🔷 Factorial of a number using do-while loop
+// #include <stdio.h>
+// int main() {
+//     int n, fact = 1;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
+
+//     int i = 1;
+//     do {
+//         fact *= i;
+//         i++;
+//     } while (i <= n);
+
+//     printf("Factorial = %d", fact);
+//     return 0;
+// }
+
+
+// //11.🔷 Reverse a number using do-while loop
+// #include <stdio.h>
+// int main() {
+//     int num, reverse = 0;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+
+//     do {
+//         reverse = reverse * 10 + (num % 10);
+//         num /= 10;
+//     } while (num > 0);
+
+//     printf("Reversed number = %d", reverse);
+//     return 0;
+// }
 
 
 
