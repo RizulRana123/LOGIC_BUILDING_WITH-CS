@@ -249,6 +249,9 @@
 //     printf("Enter elements:\n");
 //     for(i = 0; i < n; i++) {
 //         scanf("%d", &arr1[i]);
+//     }
+//     
+//     for(i = 0; i < n; i++) {
 //         arr2[i] = arr1[i];
 //     }
 
@@ -334,3 +337,4 @@
 
 // return 0;
 // }
+
