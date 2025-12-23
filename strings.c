@@ -135,3 +135,69 @@
 //     return 0;
 
 // }
+
+
+// #include <stdio.h>
+
+// struct Student {
+//     char name[20];
+//     int age;
+//     float marks;
+// };
+
+// float average(struct Student s[], int n) {
+//     float sum = 0;
+//     for(int i = 0; i < n; i++)
+//         sum += s[i].marks;
+//     return sum / n;
+// }
+
+// int main() {
+//     struct Student st[10];
+
+//     for(int i = 0; i < 10; i++) {
+//         printf("Enter name, age, marks of student %d:\n", i+1);
+//         scanf("%s %d %f", st[i].name, &st[i].age, &st[i].marks);
+//     }
+
+//     float avg = average(st, 10);
+//     printf("\nAverage marks of class = %.2f\n", avg);
+
+
+
+#include <stdio.h>
+
+int main() {
+    int r, c,sum = 0;
+
+    printf("Enter rows: ");
+    scanf("%d", &r);
+    printf("Enter columns: ");
+    scanf("%d", &c);
+
+    int matrix[r][c];
+
+    printf("Enter elements:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &matrix[i][j]);
+            if (i == j)
+            {
+                sum = sum + matrix[i][j];
+            }
+           
+        }
+        
+    }
+     printf("%d",sum);
+
+    // printf("\nMatrix:\n");
+    // for (int i = 0; i < r; i++) {
+    //     for (int j = 0; j < c; j++) {
+    //         printf("%d ", matrix[i][j]);
+    //     }
+    //     printf("\n");
+    // }
+
+    return 0;
+}
